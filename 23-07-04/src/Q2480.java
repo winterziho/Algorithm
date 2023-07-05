@@ -12,18 +12,8 @@ public class Q2480 {
 		
 		if(a == b && b == c) {
 			sum = 10000 + a*1000;
-		}
-		
-		if(a == b) {
-			sum = 1000 + a*100;
-		}
-		if(a == c) {
-			sum = 1000 + a*100;
-		}
-		if(c == b) {
-			sum = 1000 + c*100;
-		}
-		if (a != b && b != c) {
+			
+		}else if (a != b && b != c && a != c) {
 			if(max < b) {
 				max = b;
 			}
@@ -32,6 +22,16 @@ public class Q2480 {
 			}
 			sum = max * 100;
 		}
+		else if(a == b) {
+			sum = 1000 + a*100;
+		}else if(a == c) {
+			sum = 1000 + a*100;
+		}else if(c == b) {
+			sum = 1000 + c*100;
+		}
+		
+		
+		
 		
 		System.out.println(sum);
 	}
