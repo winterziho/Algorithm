@@ -11,9 +11,9 @@ public class Q11022 {
 		for(int x = 0; x < T; x++) {
 			int A = sc.nextInt();
 			int B = sc.nextInt();
-			sum = A - B;
+			sum = A + B;
 			
-			System.out.println("Case #" + x + ":" + A + B + "=" + sum);
+			System.out.println("Case #" + (x+1) + ": " + A +" + "+ B + " = " + sum);
 		}
 
 	}
