@@ -9,16 +9,16 @@ public class Bubble {
 		int temp;
 		
 		while(k < 4) {
+			
 			int i = arr.length;
 			
 			for(i = 4;i > k; i--) {
-			if(!(arr[i - 1] < arr[i])) {
-				temp = arr[i-1];
-				arr[i -1] = arr[i];
-				arr[i] = temp;
-			}
-			
-			}k = k + 1;
+				if(!(arr[i - 1] < arr[i])) {
+					temp = arr[i-1];
+					arr[i -1] = arr[i];
+					arr[i] = temp;
+				}
+			}k++;
 		} 
 		System.out.println(Arrays.toString(arr));
 	}
