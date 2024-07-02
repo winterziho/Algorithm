@@ -1,8 +1,8 @@
-package test;
+package Ch2;
 
 import java.util.*;
 
-public class test {
+public class Q4 {
 
 	public ArrayList<Integer> solution(int n) {
 
@@ -24,7 +24,7 @@ public class test {
 
 	public static void main(String[] args) {
 
-		test T = new test();
+		Q4 T = new Q4();
 
 		Scanner sc = new Scanner(System.in);
 		
