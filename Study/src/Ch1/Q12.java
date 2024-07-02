@@ -1,8 +1,8 @@
-package test;
+package Ch1;
 
 import java.util.*;
 
-public class test {
+public class Q12 {
 
 	public String solution(int n, String str) {
 
@@ -25,7 +25,7 @@ public class test {
 
 	public static void main(String[] args) {
 
-		test T = new test();
+		Q12 T = new Q12();
 
 		Scanner sc = new Scanner(System.in);
 		
