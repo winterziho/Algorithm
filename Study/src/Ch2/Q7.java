@@ -1,21 +1,22 @@
-package test;
+package Ch2;
 
 import java.util.*;
 
-public class test {
+public class Q7 {
 
 	public int solution(int n, int[] arr) {
 
-		int answer = arr[0];
-		int[] s = new int[n];
-		s[0] = arr[0];
+		int answer = 0, cnt = 0;
 		
-		for(int i = 1; i < n; i++) {
+		for(int i = 0; i < n; i++) {
 			
 			if(arr[i] == 1) {
-				s[i] = (s[i-1] + 1);
-				answer += s[i];
+				cnt++;
+				answer += cnt;
+				
 			}
+			else cnt = 0;
+			
 		}
 
 		
@@ -26,7 +27,7 @@ public class test {
 
 	public static void main(String[] args) {
 
-		test T = new test();
+		Q7 T = new Q7();
 
 		Scanner sc = new Scanner(System.in);
 
