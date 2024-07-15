@@ -4,24 +4,20 @@ import java.util.*;
 
 public class test {
 
-	public int solution(int n, int[] arr) {
+	public int solution(int n, int[] a, int k) {
 
-		int answer = arr[0];
-		int[] s = new int[n];
-		s[0] = arr[0];
+		int answer = 0;
 		
-		for(int i = 1; i < n; i++) {
-			
-			if(arr[i] == 1) {
-				s[i] = (s[i-1] + 1);
-				answer += s[i];
+		
+		for(int i = 0; i < n; i++) {
+			int sum = 0;
+			for(int j = 0; j < k; j++) {
+				if(i + j < n) sum += a[i+j];
 			}
+			if(answer < sum) answer = sum;
+			
 		}
-
-		
-
 		return answer;
-
 	}
 
 	public static void main(String[] args) {
@@ -31,13 +27,14 @@ public class test {
 		Scanner sc = new Scanner(System.in);
 
 		int n = sc.nextInt();
-		int[] arr = new int[n];
-		for (int i = 0; i < n; i++) {
-			arr[i] = sc.nextInt();
-
+		int[] a = new int[n];
+		int k = sc.nextInt();
+		for(int i = 0; i < n; i ++) {
+			a[i] = sc.nextInt();
 		}
+		
 
-		System.out.println(T.solution(n, arr));
+		System.out.println(T.solution(n, a, k));
 
 	}
 }
