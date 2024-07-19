@@ -1,8 +1,8 @@
-package test;
+package Ch4;
 
 import java.util.*;
 
-public class test {
+public class Q5 {
 
 	public int solution(int n, int k, int[] arr) {
 
@@ -27,7 +27,7 @@ public class test {
 
 	public static void main(String[] args) {
 
-		test T = new test();
+		Q5 T = new Q5();
 		
 		Scanner sc = new Scanner(System.in);
 		
