@@ -1,27 +1,30 @@
-package test;
+package Ch6;
 
 import java.util.*;
 
-
-
-public class test {
+public class Q2 {
 
 	public void solution(int n, int[] m) {
 
-		int tmp ,j;
-		for(int i = 1; i < n; i++) {
-			tmp = m[i];
-			for(j = i-1; j >=0; j--) {
-				if(m[j]>tmp) m[j+1] = m[j];
-				else break;
+		int[] answer = new int[n];
+		int tmp;
+		for(int i = 0; i < n-1; i++) {
+			for(int j = 0; j < n-1-i; j++) {
+				if(m[j] > m[j+1]) {
+					tmp = m[j];
+					m[j] = m[j+1];
+					m[j+1] = tmp;
+				}
 			}
-			m[j+1] = tmp;
+		}
+		for(int x : m) {
+			System.out.print(x + " ");
 		}
 	}
 
 	public static void main(String[] args) {
 
-		test T = new test();
+		Q2 T = new Q2();
 
 		Scanner sc = new Scanner(System.in);
 

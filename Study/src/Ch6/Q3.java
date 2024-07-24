@@ -1,10 +1,10 @@
-package test;
+package Ch6;
 
 import java.util.*;
 
 
 
-public class test {
+public class Q3 {
 
 	public void solution(int n, int[] m) {
 
@@ -21,7 +21,7 @@ public class test {
 
 	public static void main(String[] args) {
 
-		test T = new test();
+		Q3 T = new Q3();
 
 		Scanner sc = new Scanner(System.in);
 
