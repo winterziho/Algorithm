@@ -1,8 +1,8 @@
-package test;
+package Ch8;
 
 import java.util.*;
 
-public class test {
+public class Q5 {
 	
 	static int n, m, answer = Integer.MAX_VALUE;
 	
@@ -21,7 +21,7 @@ public class test {
 	}
 	
 	public static void main(String[] args) {
-		test T = new test();
+		Q5 T = new Q5();
 		Scanner sc = new Scanner(System.in);
 		
 		n = sc.nextInt();
